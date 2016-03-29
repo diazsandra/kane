@@ -611,6 +611,40 @@ ul {
 			background-color: rgba(192, 127, 83, 0.6) !important;
 			color: $blco;
 			font-size: 1.2em;
-		}
+
+	}
+	}
+}
+
+#social {
+	background-image: url(../img/img-divider-img.jpg);
+	background-size: 100%; 
+	background-repeat: repeat; 
+	color: $blco;
+	padding-bottom: $quince;
+	padding-top: $quince;
+
+	.ngr {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	i {
+		color: $blco;
+		font-size: 5em;
+	}
+}
+
+footer {
+	background-color: $greenhd;
+	font-weight: lighter;
+	padding-top: $cinco;
+
+	h4 {
+		font-weight: normal;
+	}
+
+	hr {
+		width: $quince;
+		border: $blco solid .1em;
 	}
 }

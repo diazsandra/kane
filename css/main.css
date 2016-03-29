@@ -320,4 +320,27 @@ ul {
       color: #FFFFFF;
       font-size: 1.2em; }
 
+#social {
+  background-image: url(../img/img-divider-img.jpg);
+  background-size: 100%;
+  background-repeat: repeat;
+  color: #FFFFFF;
+  padding-bottom: 15%;
+  padding-top: 15%; }
+  #social .ngr {
+    background-color: rgba(0, 0, 0, 0.1); }
+  #social i {
+    color: #FFFFFF;
+    font-size: 5em; }
+
+footer {
+  background-color: #0F8C3B;
+  font-weight: lighter;
+  padding-top: 5%; }
+  footer h4 {
+    font-weight: normal; }
+  footer hr {
+    width: 15%;
+    border: #FFFFFF solid 0.1em; }
+
 /*# sourceMappingURL=main.css.map */
