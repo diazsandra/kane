@@ -238,7 +238,8 @@ ul {
     font-weight: lighter;
     padding-bottom: 10%; }
   #price .feature {
-    border: solid 2px #c09853 !important; }
+    border: solid 2px #c09853 !important;
+    margin-top: -65px; }
   #price .borde {
     border: solid 2px #0F8C3B;
     padding: 0;
@@ -265,5 +266,58 @@ ul {
       background-color: rgba(192, 127, 83, 0.8) !important;
       color: #FFFFFF !important;
       border: none; }
+
+@media (min-width: 300px) and (max-width: 750px) {
+  .borde {
+    width: 50%;
+    margin: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; } }
+@media (min-width: 300px) and (max-width: 750px) {
+  .feature {
+    margin-top: 5% !important; } }
+/* CLIENTS */
+#clients {
+  background-color: #092743;
+  padding-top: 5%;
+  padding-bottom: 10%; }
+  #clients h2 {
+    font-weight: 300;
+    font-size: 3em;
+    margin-bottom: 5%; }
+  #clients hr {
+    color: #FFFFFF;
+    width: 150px;
+    border: #FFFFFF solid 1px; }
+  #clients p {
+    font-weight: lighter;
+    padding-bottom: 5%; }
+  #clients blockquote {
+    border-left: none;
+    padding: 0 25%;
+    font-size: 1.2em; }
+
+#getin {
+  background-color: #092743;
+  padding-top: 5%;
+  padding-bottom: 10%; }
+  #getin h2 {
+    font-weight: 300;
+    font-size: 3em;
+    margin-bottom: 5%; }
+  #getin hr {
+    color: #FFFFFF;
+    width: 150px;
+    border: #FFFFFF solid 1px; }
+  #getin p {
+    font-weight: lighter;
+    padding-bottom: 5%; }
+  #getin .contact {
+    width: 60%; }
+    #getin .contact .btn-submit {
+      background-color: rgba(192, 127, 83, 0.6) !important;
+      color: #FFFFFF;
+      font-size: 1.2em; }
 
 /*# sourceMappingURL=main.css.map */

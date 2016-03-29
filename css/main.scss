@@ -446,25 +446,32 @@ ul {
 	padding-top: $diez;
 	padding-bottom: $diez;
 
-	h2 {
-		font-weight: 300;
-		font-size: $em3;
-		margin-bottom: $cinco;
+	@mixin subtitle {
+	font-weight: 300;
+	font-size: $em3;
+	margin-bottom: $cinco;
 	}
 
-	hr {
-		color: $blco;
-		width: $px150;
-		border: $blco solid $px1;
+	h2 { @include subtitle }
+
+	@mixin line {
+	color: $blco;
+	width: $px150;
+	border: $blco solid $px1;
 	}
 
-	p {
-		font-weight: lighter;
-		padding-bottom: $diez;
+	hr { @include line }
+
+	@mixin textp {
+	font-weight: lighter;
+	padding-bottom: $diez;
 	}
+
+	p { @include textp }
 
 	.feature {
 		border: solid 2px $warning !important;
+		margin-top: -65px ;
 	}
 
 	.borde {
@@ -510,13 +517,100 @@ ul {
 			color: $blco !important;
 			border: none;
 		}
-
 	}
+}
 
+@media (min-width: 300px) and (max-width: 750px) {
+	.borde {
+		width: 50%;
+		margin: 5%;
+		display: block;
+  		margin-left: auto;
+ 		margin-right: auto;
+	}
+}
+
+@media (min-width: 300px) and (max-width: 750px) {
+	.feature {
+		margin-top: 5% !important;
+	}
 
 }
 
+/* CLIENTS */
 
+#clients {
+	background-color: $bluep;
+	padding-top: $cinco;
+	padding-bottom: $diez;
 
+	
+	@mixin subtitle {
+	font-weight: 300;
+	font-size: $em3;
+	margin-bottom: $cinco;
+	}
 
+	h2 { @include subtitle }
 
+	@mixin line {
+	color: $blco;
+	width: $px150;
+	border: $blco solid $px1;
+	}
+
+	hr { @include line }
+
+	@mixin textp {
+	font-weight: lighter;
+	padding-bottom: $cinco;
+	}
+
+	p { @include textp }
+
+	blockquote {
+		border-left: none;
+		padding: 0 25%;
+		font-size: 1.2em;
+	}
+}
+
+#getin {
+	background-color: $bluep;
+	padding-top: $cinco;
+	padding-bottom: $diez;
+
+	
+	@mixin subtitle {
+	font-weight: 300;
+	font-size: $em3;
+	margin-bottom: $cinco;
+	}
+
+	h2 { @include subtitle }
+
+	@mixin line {
+	color: $blco;
+	width: $px150;
+	border: $blco solid $px1;
+	}
+
+	hr { @include line }
+
+	@mixin textp {
+	font-weight: lighter;
+	padding-bottom: $cinco;
+	}
+
+	p { @include textp }
+
+	.contact {
+		width: 60%;
+
+		.btn-submit {
+			background-color: rgba(192, 127, 83, 0.6) !important;
+			color: $blco;
+			font-size: 1.2em;
+		}
+	}
+}
